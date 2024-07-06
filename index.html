@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue London</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+    <header>
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-3 col-2">
+                    <div class="right-act">
+                        <div class="singleright">
+                            <div class="menubtn d-flex">
+                                <i class="fa-solid fa-bars"></i>
+                                <p>Menu</p>
+                            </div>
+                        </div>
+                        <div class="singleright">
+                            <div class="searchbtn d-flex">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <p>Search</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-10 text-center">
+                    <div class="logo">
+                        <img src="logo.png" alt="">
+                    </div>
+                </div>
+
+                <div class="col-md-3 text-end">
+                    <div class="left-act">
+                        <a href="#">Call Us</a>
+                        <a href="#"><i class="fa-regular fa-heart"></i></a>
+                        <a href="#"><i class="fa-regular fa-user"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="sidebar">
+        <a href="#" class="colsebtn"><i class="fa-solid fa-xmark"></i></a>
+        <ul class="main-menu">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">About Us</a>
+            </li>
+            <li>
+                <a href="#">Shop</a>
+            </li>
+            <li>
+                <a href="#">Gallery</a>
+            </li>
+            <li>
+                <a href="#">Contact Us</a>
+            </li>
+        </ul>
+    </div>
+    <div class="overlay"></div>
+
+    <section class="mainsec">
+        <video src="video.mp4" autoplay muted loop width="100%" style="height: 84vh; object-fit: cover; object-position: top;"></video>
+        <div class="ban-cont">
+            <span class="subhead">MEN</span>
+            <h2>Fall - Winter 2024</h2>
+            <a href="#" class="themebtn">Discover The Collection</a>
+        </div>
+    </section>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+
+
+    <script>
+
+        $(document).ready(function () {
+            $(".menubtn").click(function () {
+                $(".sidebar").addClass('activeside');
+                $(".overlay").addClass('activeside');
+            });
+
+            $(".colsebtn").click(function () {
+                $(".sidebar").removeClass('activeside');
+                $(".overlay").removeClass('activeside');
+            });
+        });
+
+
+    </script>
+</body>
+
+</html>
